@@ -1,0 +1,7 @@
+{
+    "name": "campaignchain-textarea-count-form-type",
+    "dependencies": {
+        "twitter-text": "1.*",
+        "jquery-highlighttextarea": "3.*"
+    }
+}

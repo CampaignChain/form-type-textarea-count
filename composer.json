@@ -1,0 +1,31 @@
+{
+    "name": "campaignchain/form-type-textarea-count",
+    "description": "A textarea with character counter for max chars.",
+    "keywords": ["campaignchain"],
+    "type": "campaignchain-symfony",
+    "homepage": "http://www.campaignchain.com",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "CampaignChain, Inc.",
+            "email": "info@campaignchain.com",
+            "homepage": "http://www.campaignchain.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/CampaignChain/campaignchain/issues",
+        "docs": "http://doc.campaignchain.com"
+    },
+    "autoload": {
+        "psr-4": { "CampaignChain\\TextareaCountFormTypeBundle\\": "" }
+    },
+    "extra": {
+        "campaignchain": {
+            "kernel": {
+                "classes": [
+                    "CampaignChain\\TextareaCountFormTypeBundle\\CampaignChainTextareaCountFormTypeBundle"
+                ]
+            }
+        }
+    }
+}
