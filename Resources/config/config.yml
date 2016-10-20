@@ -21,6 +21,9 @@ assetic:
     bundles:
         - CampaignChainTextareaCountFormTypeBundle
     assets:
+        campaignchain_form_type_textarea_counter_css:
+            inputs:
+                - "@CampaignChainTextareaCountFormTypeBundle/Resources/public/css/base.css"
         twitter_text_js:
             inputs:
                 - "@CampaignChainTextareaCountFormTypeBundle/Resources/public/components/twitter-text/js/twitter-text.js"

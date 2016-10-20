@@ -16,6 +16,19 @@ limitations under the License.
 
 {% block textarea_count_widget %}
     {% spaceless %}
+        <div id="campaignchain-form-type-textarea-counter">
+
+        {% stylesheets '@campaignchain_form_type_textarea_counter_css' %}
+        <link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+        {% endstylesheets %}
+
+        {% javascripts '@twitter_text_js' %}
+        <script
+                {% endjavascripts %}
+                {% javascripts '@twitter_text_js' %}
+                src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+
         {% set col_size = col_size|default(bootstrap_get_col_size()) %}
 
         {% if attr.simple_col is defined and attr.simple_col is not empty %}
@@ -30,13 +43,6 @@ limitations under the License.
         {% endif %}
 
         {% set attr = attr|merge({ 'class': (attr.class|default('') ~ ' form-control')|trim }) %}
-
-        {% javascripts '@twitter_text_js' %}
-        <script
-                {% endjavascripts %}
-                {% javascripts '@twitter_text_js' %}
-                src="{{ asset_url }}"></script>
-        {% endjavascripts %}
 
         {% if attr.maxlength is defined %}
             {% set text_max = attr.maxlength %}
@@ -136,5 +142,6 @@ limitations under the License.
         {% if simple_col is defined %}
             </div>
         {% endif %}
+        </div>
     {% endspaceless %}
 {% endblock textarea_count_widget %}
