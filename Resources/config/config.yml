@@ -16,6 +16,7 @@ sp_bower:
     bundles:
         CampaignChainTextareaCountFormTypeBundle:
             cache: %kernel.cache_dir%/../bower
+            asset_dir: %kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count
 
 assetic:
     bundles:
@@ -26,15 +27,15 @@ assetic:
                 - "@CampaignChainTextareaCountFormTypeBundle/Resources/public/css/base.css"
         twitter_text_js:
             inputs:
-                - "@CampaignChainTextareaCountFormTypeBundle/Resources/public/components/twitter-text/js/twitter-text.js"
+                - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/twitter-text/js/twitter-text.js"
         highlight_textarea_js:
             inputs:
-                - "@CampaignChainCoreBundle/Resources/public/components/jquery-ui/jquery-ui.min.js"
-                - "@CampaignChainTextareaCountFormTypeBundle/Resources/public/components/jquery-highlighttextarea/jquery.highlighttextarea.min.js"
+                - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/jquery-ui/jquery-ui.min.js"
+                - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/jquery-highlighttextarea/jquery.highlighttextarea.min.js"
         highlight_textarea_css:
             inputs:
-                - "@CampaignChainCoreBundle/Resources/public/components/jquery-ui/themes/base/jquery-ui.min.css"
-                - "@CampaignChainTextareaCountFormTypeBundle/Resources/public/components/jquery-highlighttextarea/jquery.highlighttextarea.min.css"
+                - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/jquery-ui/themes/base/jquery-ui.min.css"
+                - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/jquery-highlighttextarea/jquery.highlighttextarea.min.css"
 
 twig:
     form:
