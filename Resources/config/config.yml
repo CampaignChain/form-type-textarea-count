@@ -30,11 +30,11 @@ assetic:
                 - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/twitter-text/js/twitter-text.js"
         highlight_textarea_js:
             inputs:
-                - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/jquery-ui/jquery-ui.min.js"
+                - "%kernel.root_dir%/../web/vendor/campaignchain/core/jquery-ui/jquery-ui.min.js"
                 - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/jquery-highlighttextarea/jquery.highlighttextarea.min.js"
         highlight_textarea_css:
             inputs:
-                - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/jquery-ui/themes/base/jquery-ui.min.css"
+                - "%kernel.root_dir%/../web/vendor/campaignchain/core/jquery-ui/themes/base/jquery-ui.min.css"
                 - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/jquery-highlighttextarea/jquery.highlighttextarea.min.css"
 
 twig:
