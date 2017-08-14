@@ -38,6 +38,5 @@ assetic:
                 - "%kernel.root_dir%/../web/vendor/campaignchain/form-type-textarea-count/jquery-highlighttextarea/jquery.highlighttextarea.min.css"
 
 twig:
-    form:
-        resources:
-            - 'CampaignChainTextareaCountFormTypeBundle:Form:fields.html.twig'
+    form_themes:
+        - 'CampaignChainTextareaCountFormTypeBundle:Form:fields.html.twig'
